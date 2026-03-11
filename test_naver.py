@@ -72,16 +72,8 @@ try:
 
     time.sleep(5)
 
-    print("7. 우측 상단 X 버튼 클릭")
-    wait.until(
-        EC.element_to_be_clickable(
-            (AppiumBy.ID, "com.nhn.android.search:id/exit")
-        )
-    ).click()
-
-    time.sleep(2)
-
-    print("8. 메일 텍스트의 부모 클릭")
+    
+    print("7. 메일 텍스트의 부모 클릭")
     mail_parent = wait.until(
         EC.element_to_be_clickable(
             (
